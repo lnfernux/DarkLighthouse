@@ -124,10 +124,6 @@ Each option prompts for required information step-by-step.
 
 #### Lighthouse-Only Discovery (Default)
 ```powershell
-# Check only Azure Lighthouse delegations (no Graph connection)
-Invoke-DarkLighthouse -TenantId "tenant-id"
-
-# With specific user
 Invoke-DarkLighthouse -Username "admin@contoso.com" -TenantId "tenant-id"
 ```
 
@@ -303,3 +299,4 @@ Deployed             : True
 ## Known errors
 
 1. Some `Az`-modules might output errors about breaking changes. Disable this by running `Update-AzConfig -DisplayBreakingChangeWarning $false`.
+
